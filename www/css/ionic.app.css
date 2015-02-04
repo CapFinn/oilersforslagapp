@@ -7019,7 +7019,7 @@ a.button {
   background: url("../img/oilers-background-2.jpg") no-repeat center center fixed;
   background-size: cover; }
 
-*, div, p, h1, h2, h3, body, html {
+*, div, p, a, h1, h2, h3, body, html, button, ion-content {
   font-family: "Roboto Condensed", sans-serif; }
 
 #map {
@@ -7075,6 +7075,16 @@ a.button {
   border-radius: 0;
   margin-left: 25px;
   margin-right: 25px; }
+
+.card .item:first-child {
+  border-radius: 0; }
+
+.sell-ticket-btn {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.item {
+  border-color: #555555; }
 
 .next-match-container {
   background-color: rgba(40, 40, 40, 0.6);

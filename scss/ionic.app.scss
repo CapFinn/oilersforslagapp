@@ -27,7 +27,9 @@ $big-bg: "../img/oilers-background-2.jpg";
   background-size: cover;
 }
 
-*,div,p,h1,h2,h3,body,html{font-family: "Roboto Condensed", sans-serif;}
+*, div, p, a, h1, h2, h3, body, html, button, ion-content {
+  font-family: "Roboto Condensed", sans-serif;
+}
 
 #map {
   width: 100%;
@@ -96,6 +98,19 @@ $dark: #222;
   border-radius: 0;
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.card .item:first-child{
+  border-radius:0;
+}
+
+.sell-ticket-btn{
+  margin-left:15px;
+  margin-right: 15px;
+}
+
+.item{
+  border-color: lighten($dark, 20%);
 }
 
 .next-match-container{
