@@ -15,13 +15,13 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
-$royal:                           gray;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-$big-bg: "../img/background_oilers_test.png";
+$big-bg: "../img/oilers-background-2.jpg";
+
 .scroll-bg {
   background: url($big-bg) no-repeat center center fixed;
   background-size: cover;
@@ -38,13 +38,13 @@ $big-bg: "../img/background_oilers_test.png";
   height: 100%;
 }
 
-$dark: #3f4041;
+$dark: #222;
 
 .dark {
-  background-color: #3f4041 !important;
+  background-color: $dark !important;
   color: #ffffff;
   .scroll-content {
-    background-color: #3f4041 !important;
+    background-color: $dark !important;
   }
   .item {
     background-color: $dark;
@@ -95,6 +95,7 @@ $dark: #3f4041;
 }
 
 .card{
+  border-radius: 0;
   margin-left: 25px;
   margin-right: 25px;
 }
