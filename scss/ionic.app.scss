@@ -21,9 +21,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 
 $big-bg: "../img/oilers-background-2.jpg";
+$big-bg-2: "../img/oilers-background.jpg";
 
 .scroll-bg {
   background: url($big-bg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.scroll-bg-2 {
+  background: url($big-bg-2) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -112,6 +118,7 @@ $dark: #222;
 .item{
   border-color: lighten($dark, 20%);
 }
+
 
 .next-match-container{
   background-color: rgba(40, 40, 40, 0.6);
