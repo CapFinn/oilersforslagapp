@@ -50,6 +50,54 @@ angular.module('starter.controllers', [])
      }
    });
  };
+ // A confirm dialog
+ $scope.showConfirmSale = function() {
+   var confirmPopup = $ionicPopup.show({
+     title: 'Selge bilett?',
+     template: 'Siden du ikke skal på denne kampen, ønskre du å legge ut biletten for salg?',
+     buttons: [
+     {
+       text: "Nei",
+       type: "button-assertive"
+     },
+     {
+       text: "Ja",
+       type: "button-balanced"
+     }]
+   });
+   confirmPopup.then(function(res) {
+     if(res) {
+       console.log('You are sure');
+     } else {
+       console.log('You are not sure');
+     }
+   });
+ };
+})
+
+.controller('ActionSheetCtrl', function($scope, $ionicActionSheet, $timeout) {
+
+ // Triggered on a button click, or some other target
+ $scope.show = function() {
+
+   // Show the action sheet
+   var hideSheet = $ionicActionSheet.show({
+     buttons: [
+       { text: 'Ja' }
+     ],
+     titleText: 'Vil du selge billetten?',
+     cancelText: 'Nei',
+     cancel: function() {
+          // add cancel code..
+        },
+     buttonClicked: function(index) {
+       return true;
+     }
+   });
+
+
+
+ };
 })
 
 .controller('MapCtrl', function($scope, $ionicLoading, $compile) {

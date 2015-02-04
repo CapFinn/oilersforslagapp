@@ -33,7 +33,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ui.router'])
     url: "/resalg",
     views: {
       'menuContent': {
-        templateUrl: "templates/resalg.html"
+        templateUrl: "templates/resalg.html",
+        controller: "ActionSheetCtrl"
       }
     }
   })
