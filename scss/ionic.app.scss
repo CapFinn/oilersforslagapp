@@ -1,0 +1,135 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$royal:                           gray;
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+$big-bg: "../img/background_oilers_test.png";
+.scroll-bg {
+  background: url($big-bg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+*,div,p,h1,h2,h3,body,html{font-family: "Roboto Condensed", sans-serif;}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll {
+  height: 100%;
+}
+
+$dark: #3f4041;
+
+.dark {
+  background-color: #3f4041 !important;
+  color: #ffffff;
+  .scroll-content {
+    background-color: #3f4041 !important;
+  }
+  .item {
+    background-color: $dark;
+    border: none;
+    border-top: 1px solid #464646;
+    border-bottom: 2px solid #333333;
+    padding: 20px;
+    color: #F0F1F1;
+    max-height: none;
+
+    &:last-child {
+      border-bottom: 1px solid #333333;
+    }
+    &.current{ background-color:darken( $dark, 10% )   !important;
+       border-top: 1px solid #464646 !important;
+    border-bottom: 2px solid #333333 !important;
+      p,h3{opacity: .7;}
+            }
+  }
+  .item2{
+    background-color: $dark;
+    border: none;
+    border-top: 1px solid #464646;
+    border-bottom: 2px solid #333333;
+    padding: 3px;
+    color: #F0F1F1;
+    max-height: none;
+    font-weight: bold;
+
+    &:last-child {
+      border-bottom: 1px solid #333333;
+    }
+    &.current{ background-color:darken( $dark, 10% )   !important;
+       border-top: 1px solid #464646 !important;
+    border-bottom: 2px solid #333333 !important;
+      p,h3{opacity: .7;}
+            }
+  }
+  h2,
+  h3,
+  p,
+  a{
+    color: #F0F1F1;
+  }
+}
+.dark-head {
+  text-decoration: none;
+}
+
+.card{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.next-match-container{
+  background-color: rgba(40, 40, 40, 0.6);
+  margin-left: 25px;
+  margin-right: 25px;
+
+    .opponent{
+      background-image: url(../img/nestekamp.PNG);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .match-info {
+      background-color: rgba(60,60,60,0.5);
+
+      .match-time{
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        text-align:center;
+      }
+
+      .match-date{
+        color: white;
+        font-size: 18px;
+        text-align:center;
+      }
+
+      .match-text{
+        color: #aaa;
+        text-align: center
+      }
+  }
+}
