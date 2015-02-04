@@ -92,6 +92,3 @@ angular.module('starter.controllers', [])
         alert('Example of infowindow with ng-click')
     };
 })
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
