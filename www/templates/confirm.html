@@ -1,21 +1,24 @@
-<ion-view view-title="Resalg Sesongkort Godkjenn" >
+<ion-view view-title="Godkjenn Salg" >
   <ion-content class="scroll-bg">
     <div class="list card next-match-container">
       <div class="list card">
-        <div class="item item-divider dark">
+        <div class="item item-divider dark item-text-wrap">
           <p class="item2">Info</p>
-          <p> Din bilett for denne kampen vil bli lagt ut til salg. </p><p> Du kan velge om du ønsker å få refundert $$$,- nok </p> <p> eller donere summen til Oilersspillernes Veldedighetsfond </p>
+          <p> Din bilett for denne kampen vil bli lagt ut til salg. Du kan velge om du ønsker å få refundert $$$,- nok, eller donere summen til Oilersspillernes Veldedighetsfond.</p>
         </div>
       </div>
-      <div class="list card">
-        <div class="item item-divider dark">
-          <p class="item2">Refusjonsvalg</p>
+    </div>
+      <div class="list card next-match-container">
+        <div class="list card">
+          <div class="item item-divider dark">
+            <p class="item2">Refusjonsvalg</p>
+          </div>
+            <ion-checkbox class="checkbox-positive dark">Få penger tilgode</ion-checkbox>
+            <ion-checkbox class="checkbox-positive dark">Doner beløpet*</ion-checkbox>
         </div>
-        <ion-checkbox class="checkbox-dark">Ha penger tilgode</ion-checkbox>
-        <ion-checkbox class="checkbox-dark">Doner beløpet*</ion-checkbox>
-        <label class="item">
-          <button class="button button-block button-dark" ng-click="showConfirm()">Send</button>
-        </label>
+      </div>
+      <div class="padding">
+      <a class="button button-dark button-block sell-ticket-btn" ng-click="showConfirm()">Fullfør Salg</a>
     </div>
   </ion-content>
 </ion-view>
