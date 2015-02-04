@@ -7029,6 +7029,9 @@ a.button {
 .scroll {
   height: 100%; }
 
+.header-logo {
+  height: 32px; }
+
 .dark {
   background-color: #222 !important;
   color: #ffffff; }
