@@ -51,7 +51,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ui.router'])
     url: "/resalg/:matchId",
     views: {
       'menuContent': {
-        templateUrl: "templates/confirm.html"
+        templateUrl: "templates/confirm.html",
+        controller: "PopupCtrl"
       }
     }
   })

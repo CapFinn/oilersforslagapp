@@ -34,6 +34,24 @@ angular.module('starter.controllers', [])
 })
 
 
+.controller('PopupCtrl',function($scope, $ionicPopup, $timeout) {
+
+ // A confirm dialog
+ $scope.showConfirm = function() {
+   var confirmPopup = $ionicPopup.confirm({
+     title: 'Godkjenn Salg',
+     template: 'Er du sikker på at du vil selge biletten? Dette valget kan ikke angres!'
+   });
+   confirmPopup.then(function(res) {
+     if(res) {
+       console.log('You are sure');
+     } else {
+       console.log('You are not sure');
+     }
+   });
+ };
+})
+
 .controller('MapCtrl', function($scope, $ionicLoading, $compile) {
 
     $scope.init = function() {
