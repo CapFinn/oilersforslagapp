@@ -66,17 +66,11 @@ $dark: #3f4041;
   }
   .item2{
     background-color: $dark;
-    border: none;
-    border-top: 1px solid #464646;
-    border-bottom: 2px solid #333333;
     padding: 3px;
     color: #F0F1F1;
     max-height: none;
     font-weight: bold;
 
-    &:last-child {
-      border-bottom: 1px solid #333333;
-    }
     &.current{ background-color:darken( $dark, 10% )   !important;
        border-top: 1px solid #464646 !important;
     border-bottom: 2px solid #333333 !important;

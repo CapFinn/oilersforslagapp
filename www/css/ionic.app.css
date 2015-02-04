@@ -7052,15 +7052,10 @@ a.button {
         opacity: 0.7; }
   .dark .item2 {
     background-color: #3f4041;
-    border: none;
-    border-top: 1px solid #464646;
-    border-bottom: 2px solid #333333;
     padding: 3px;
     color: #F0F1F1;
     max-height: none;
     font-weight: bold; }
-    .dark .item2:last-child {
-      border-bottom: 1px solid #333333; }
     .dark .item2.current {
       background-color: #262727 !important;
       border-top: 1px solid #464646 !important;
