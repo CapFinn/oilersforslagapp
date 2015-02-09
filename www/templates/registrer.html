@@ -1,41 +1,55 @@
 <ion-view view-title="Registrering">
   <ion-content class="scroll-bg">
+  <form name="registerForm">
     <div class="list card">
       <div class="item item-divider dark">
         <p class="item2">Personlig Informasjon</p>
       </div>
-      <label class="item item-input">
-        <input type="text" placeholder="Navn">
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="Adresse">
-      </label>
-      <label class="item item-input">
-        <input type="tel" placeholder="Tlf">
-      </label>
-      <label class="item item-input">
-        <input type="email" placeholder="Email">
-      </label>
+      <md-content class="md-padding" layout="row" layout-sm="column">
+        <md-input-container>
+          <label>Navn</label>
+          <input ng-model="user.name">
+        </md-input-container>
+         <md-input-container>
+          <label>Adresse</label>
+          <input ng-model="user.adress">
+        </md-input-container>
+         <md-input-container>
+          <label>Telefonnummer</label>
+          <input ng-model="user.phone">
+        </md-input-container>
+         <md-input-container>
+          <label>Email</label>
+          <input type="email" ng-model="user.email">
+        </md-input-container>
+      </md-content>
     </div>
     <div class="list card">
       <div class="item item-divider dark">
         <p class="item2">Kundeinformasjon</p>
       </div>
-      <label class="item item-input">
-        <input type="number" placeholder="Kundenummer">
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="Felt">
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="Rad">
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="Sete">
-      </label>
+      <md-content class="md-padding" layout="row" layout-sm="column">
+        <md-input-container>
+          <label>Kundenummer</label>
+          <input ng-model="user.customerNr">
+        </md-input-container>
+         <md-input-container>
+          <label>Felt</label>
+          <input ng-model="user.field">
+        </md-input-container>
+         <md-input-container>
+          <label>Rad</label>
+          <input ng-model="user.row">
+        </md-input-container>
+         <md-input-container>
+          <label>Sete</label>
+          <input ng-model="user.seat">
+        </md-input-container>
+      </md-content>
     </div>
     <div class="padding">
       <a class="button button-block button-dark sell-ticket-btn">Lagre</a>
     </div>
+    </form>
   </ion-content>
 </ion-view>
