@@ -54,7 +54,7 @@ angular.module('starter.controllers', [])
  $scope.showConfirmSale = function() {
    var confirmPopup = $ionicPopup.show({
      title: 'Selge bilett?',
-     template: 'Siden du ikke skal på denne kampen, ønskre du å legge ut biletten for salg?',
+     template: 'Siden du ikke skal på denne kampen, ønsker du å legge ut biletten for salg?',
      buttons: [
      {
        text: "Nei",
@@ -85,7 +85,7 @@ angular.module('starter.controllers', [])
      buttons: [
        { text: 'Ja' }
      ],
-     titleText: 'Vil du selge billetten?',
+     titleText: 'Siden du ikke skal på kampen, ønsker du å legge biletten ut for salg?',
      cancelText: 'Nei',
      cancel: function() {
           // add cancel code..
@@ -94,9 +94,6 @@ angular.module('starter.controllers', [])
        return true;
      }
    });
-
-
-
  };
 })
 
